@@ -1,0 +1,85 @@
+body{
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Hubballi', cursive;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.txtFibanachi{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.txtFibanachi1{
+    margin: 5px;
+}
+
+.txtFibanachiSum1{
+    margin: 5px;
+}
+
+.fibanachi:focus{
+    border: 1px solid rgb(133, 117, 117);
+}
+
+.form {
+    flex: 1 1 auto;
+}
+
+.container a {
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #111 ;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    min-height: 100%;
+}
+
+.submit {
+    display: inline-block;
+    border: 1px solid #444;
+    padding: 5px 10px;
+    user-select: none;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 1em;
+    background: rgb(255, 255, 255);
+    transition: all .5s;
+    width: 100px;
+    position: relative;
+    top: 15px;
+}
+
+.submit:hover{
+    background: #15141a;
+    color: #fff;
+    transition: all .5s;
+    padding: 8px 13px;
+    font-size: 1.1em;
+    top: 18px;
+}
+ 
+.fibanachi{
+    font-family: 'Hubballi', cursive;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(88, 82, 82);
+    background: rgb(236, 236, 236);
+    margin: 10px;
+    border: 1px solid rgb(133, 117, 117) ;
+    padding: 5px 0 5px 2px;
+    outline: 0;
+    width: 120px;
+}
