@@ -4,22 +4,20 @@ const txtFibanachiSum = document.querySelector(".txtFibanachiSum")
 const submit = document.querySelector(".submit")
 
 function numbersFibanachi(num){
-    let arr = [0, 1, 1]
+    let arr = [` 0`,` 1`,` 1`]
     for(let i = 1; i < num - 2 ; i++){
         let length = arr.length
-        let sum = arr[length - 1] + arr[length - 2]
-        arr[length] = sum
+        let sum = +arr[length - 1] + +arr[length - 2]
+        arr[length] = ` ${sum}`
     }
     return arr
 }
 
 function sumNumbersFibanachi(num){
     let arrNum = numbersFibanachi(num)
-    let sum = 0
-        for(let i = 0; i < arrNum.length; i++){
-            sum += arrNum[i]
-        }
-    
+    let sum = arrNum.reduce(function(preciousValue, item){
+        return +item + +preciousValue
+    }, 0)
     return sum
 }
 
@@ -44,6 +42,4 @@ function submitClick(){
 }
 
 submit.addEventListener('click', submitClick)
-fibanachi.addEventListener('keydown', function(event) {
-    if (event.code == 'Enter') submitClick()
-  })
+fibanachi.addEventListener('keydown', function(event) {if(event.code == 'Enter') submitClick()})
