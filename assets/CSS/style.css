@@ -33,11 +33,7 @@ h1{
     flex: 1 1 auto;
 }
 
-.container a {
-    align-items: center;
-}
-
-.container{
+.numFibanachi{
     display: flex;
     flex-direction: column;
     border: 1px solid #111 ;
@@ -82,4 +78,8 @@ h1{
     padding: 5px 0 5px 2px;
     outline: 0;
     width: 120px;
+}
+
+.hidden{
+    display: none;
 }
