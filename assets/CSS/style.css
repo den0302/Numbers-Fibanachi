@@ -12,16 +12,11 @@ h1{
     font-weight: 700;
 }
 
-.txtFibanachi{
-    text-align: center;
+.txtFibanachi, .txtFibanachiSum{
     word-wrap: break-word;
 }
 
-.txtFibanachi1{
-    margin: 5px;
-}
-
-.txtFibanachiSum1{
+.txtFibanachi1, .txtFibanachiSum1{
     margin: 5px;
 }
 

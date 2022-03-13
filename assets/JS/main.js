@@ -22,7 +22,14 @@ function sumNumbersFibanachi(num){
 }
 
 function submitClick(){
-    if(fibanachi.value < 0){
+    if(fibanachi.value == "if you translated it you are cool"){
+        txtFibanachi.textContent = "Did you find it? Wow. If you have gone so far, go ahead. I believe in you!"
+        txtFibanachiSum.textContent = "0101101001001000010001100011001001100101011011010110100000110001010011110110100101000010010001010101001001010110010010100100011001010010010000010011110100111101"
+    } else if(typeof fibanachi.value == "string"){
+        txtFibanachi.textContent = "enter number"
+        txtFibanachiSum.textContent = "enter number"
+        fibanachi.value = 0
+    } else if(fibanachi.value < 0){
         txtFibanachi.textContent = "number must be bigger then 0"
         txtFibanachiSum.textContent = "number must be bigger then 0"
         fibanachi.value = 0
